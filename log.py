@@ -78,15 +78,6 @@ def get_pad_vector(data):
     fused_vector = [0, 0, 0]
     for vector in pad_mapping.values():
         fused_vector = [x + y for x, y in zip(fused_vector, vector)]
-    # print(fused_vector)
-    # vectors.append(fused_vector)
-    # print(vectors)
-    # queue.put(fused_vector)
-    # print(queue)
-
-
-    # TODO: this I do not know if it works
-    # add_point(fused_vector)
     return fused_vector
 
 class Subcribe():
